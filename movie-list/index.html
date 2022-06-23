@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Movie DB</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a id="logo" href="">
+          <img src="./asset/movie-db-logo.svg" alt="logo" />
+        </a>
+        <a id="movie-list">Movie List<span id="indicator"></span></a>
+        <a id="config">Config</a>
+      </nav>
+    </header>
+    <section id="container">
+      <h1>The Most Popular Movies</h1>
+      <div class="buttons">
+        <button type="button" id="prev" disabled>Prev</button>
+        <p id="page-info">
+          Page 1 of 500 <br />
+          Total results 10,000
+        </p>
+        <button type="button" id="next">Next</button>
+      </div>
+      <div class="list-container"></div>
+    </section>
+    <div id="detail"></div>
+    <div id="config-container">
+      <img src="./asset/close.png" id="config-close" />
+      <ul></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
